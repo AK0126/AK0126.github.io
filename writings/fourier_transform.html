@@ -1,0 +1,49 @@
+<!-- Sample file -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Understanding Fourier Transforms</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <nav>
+    <h2>Alex Karbowski</h2>
+    <a href="../about.html">About Me</a>
+    <a href="../math.html">Math Writings</a>
+  </nav>
+
+  <main>
+    <article>
+      <h1>Understanding Fourier Transforms</h1>
+      <p class="date">May 10, 2025</p>
+      <p>The Fourier Transform is one of the most powerful tools in mathematics and engineering. It allows us to transform a signal from its original domain (often time or space) into the frequency domain.</p>
+
+      <p>In simple terms, the Fourier Transform breaks down a function or signal into a sum of sine and cosine waves. This is incredibly useful for analyzing periodic functions, solving differential equations, and even processing audio and images.</p>
+
+      <h2>What is the Fourier Transform?</h2>
+      <p>Mathematically, the Fourier Transform of a function \( f(t) \) is given by:</p>
+      <pre>
+F(\omega) = \int_{-\infty}^{\infty} f(t) e^{-i \omega t} dt
+      </pre>
+      <p>Where \( \omega \) represents angular frequency. This transform takes a time-domain function and outputs a frequency-domain representation.</p>
+
+      <h2>Applications</h2>
+      <ul>
+        <li>Signal processing</li>
+        <li>Image compression (e.g., JPEG)</li>
+        <li>Audio filtering</li>
+        <li>Quantum mechanics</li>
+      </ul>
+
+      <p>The inverse Fourier Transform allows us to convert the frequency domain back into the time domain, making it a reversible and powerful analysis technique.</p>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your Name</p>
+  </footer>
+</body>
+</html>
