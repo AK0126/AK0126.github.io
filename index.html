@@ -3,26 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Me - Alex Karbowski</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>My Personal Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .nav-button {
+      @apply px-4 py-2 rounded border border-gray-700 text-gray-200;
+    }
+    .nav-button.active {
+      @apply bg-gray-700 text-white;
+    }
+    .circular-img {
+      border-radius: 9999px;
+      object-fit: cover;
+    }
+  </style>
 </head>
-<body>
-  <nav>
-    <h2>Alex Karbowski</h2>
-    <a href="index.html">About Me</a>
-    <a href="math.html">Math Writings</a>
+<body class="bg-gray-900 text-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-gray-800 shadow p-4 flex justify-center items-center">
+    <div class="space-x-4">
+      <a href="index.html" class="nav-button">Home</a>
+      <a href="resume.html" class="nav-button">Resume</a>
+    </div>
   </nav>
 
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>I'm a student at Harvard college studying mathematics and computer science. 
-        Within math, my interests lie in algebraic and differential geometry.</p>
+  <!-- Home Content -->
+  <main class="p-8">
+    <section class="max-w-3xl mx-auto p-6">
+      <div class="flex items-center space-x-6">
+        <div class="flex flex-col items-center w-1/2 mr-4">
+          <img src="/assets/headshot.png" alt="My Face" class="circular-img" />
+          <h2 class="text-3xl font-semibold mt-4 whitespace-nowrap w-max">Alex Karbowski</h2>
+          <p class="text-gray-200 mt-1">Harvard College '25</p>
+          <div class="flex justify-center w-full space-x-4 mt-4">
+            <a href="https://www.linkedin.com/in/alex-karbowski/" class="flex items-center">
+              <img src="/assets/linkedin_icon.png" class="w-4 h-4 inline-block mr-1">
+              LinkedIn
+            </a>
+
+            <a href="mailto:akarbowski@college.harvard.edu" class="flex items-center">
+              <img src="/assets/email_icon.png" class="inline-block w-4 h-4 mr-1">
+              Email
+            </a>
+          </div>
+        </div>
+        <div>
+          <h1 class="text-2xl">About Me</h1>
+
+          <p class="text-gray-200 mt-4">
+            I graduated from Harvard College in 2025 with a concentration in Mathematics and a secondary in Computer Science.
+            My main academic interests are algebraic and differential geometry, but I've also enjoyed thinking about statistics and machine learning.
+            Starting fall 2025, I'll be at the University of Cambridge to study at the Part III of the Mathematical Tripos.
+          </p>
+
+          <p class="text-gray-200 mt-4">            
+            Outside of math, I enjoy practicing kendo, a Japanese martial art translating to the "way of the sword." 
+            I started kendo as a college first-year, and I'm currently ranked shodan.
+          </p>
+        </div>
+      </div>
     </section>
   </main>
-
-  <footer>
-    <p>&copy; 2025 Your Name</p>
-  </footer>
 </body>
 </html>
