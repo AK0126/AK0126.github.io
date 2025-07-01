@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Resume - Your Name</title>
+  <title>Alex Karbowski - Resume</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     .nav-button {
@@ -18,15 +18,37 @@
   <!-- Navbar -->
   <nav class="bg-gray-800 shadow p-4 flex justify-center items-center font-medium">
     <div class="space-x-4">
-      <a href="index.html" class="nav-button">Home</a>
-      <a href="resume.html" class="nav-button active">Resume</a>
+      <a href="/" class="nav-button">Home</a>
+      <a href="/resume" class="nav-button active">Resume</a>
     </div>
   </nav>
 
   <!-- Resume Content -->
   <main class="p-8">
     <section class="max-w-3xl mx-auto p-6">
-      <h2 class="text-2xl font-semibold mb-2 border-b border-gray-700">Experience</h2>
+      <h2 class="text-3xl font-semibold mb-2 border-b border-gray-700">Education</h2>
+      <div>
+        <p class="text-xl font-medium">Harvard University</p>
+        <p class="text-gray-400">August 2021 - May 2025</p>
+        <p>B.A. in Mathematics w/ Secondary in Computer Science. Quincy House.</p>
+        <p>Thesis: "A Brief History of Poncelet's Theorem," advised by professor Joe Harris.</p>
+        <p class="text-lg mt-1">Some coursework:</p>
+        <ul class="list-disc list-outside pl-4">
+          <li>Math 213a - Graduate Complex Analysis</li>
+          <li>Math 230a - Graduate Differential Geometry</li>
+          <li>Stat 111 - Statistical Inference</li>
+          <li>Stat 210 - Graduate Probability</li>
+          <li>CS 124 - Data Structures and Algorithms</li>
+          <li>CS 181 - Machine Learning</li>
+          <li>Econ 1011a - Intermediate Microeconomics, Advanced</li>
+          <li>Econ 1011b - Intermediate Macroeconomics, Advanced</li>
+          <li>Econ 1759 - Financial System and Central Bank</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="max-w-3xl mx-auto p-6">
+      <h2 class="text-3xl font-semibold mb-2 border-b border-gray-700">Experience</h2>
       <div class="space-y-6">
         <div>
           <p class="text-xl font-medium">Machine Learning Researcher - University of Maryland, College Park</p>
@@ -35,8 +57,8 @@
             <li>Created an efficient solution for the ICASSP 2024 Auditory EEG Challenge using PyTorch and MATLAB, supervised by professor Wojciech Czaja for the UMD Math REU.</li>
             <li>Decoded EEG signals using time-frequency (Gabor and Wavelet transforms) and dimension reduction techniques (kPCA and Laplacian Eigenmaps).</li>
             <li>Presented results at the 2025 Joint Mathematics Meetings. 
-              (<a href="#" class="text-blue-400 underline">Talk</a>, 
-              <a href="#" class="text-blue-400 underline">Poster</a>)
+              (<a href="https://meetings.ams.org/math/jmm2025/meetingapp.cgi/Paper/44808" target="_blank" class="text-blue-400 underline">Talk</a>, 
+              <a href="/assets/Harmonic_Analysis_ML_REU_Poster.pdf" target="_blank" class="text-blue-400 underline">Poster</a>)
             </li>
           </ul>
         </div>
@@ -65,7 +87,7 @@
     </section>
 
     <section class="max-w-3xl mx-auto p-6">
-      <h2 class="text-2xl font-semibold mb-2 border-b border-gray-700">Teaching</h2>
+      <h2 class="text-3xl font-semibold mb-2 border-b border-gray-700">Teaching</h2>
       <div class="space-y-6">
         <div>
           <p class="text-xl font-medium">Course Assistant - Harvard</p>
