@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Karbowski - Resume</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+  <style>
+    .nav-button {
+      @apply px-4 py-2 rounded border border-gray-700 text-gray-200;
+    }
+    .nav-button.active {
+      @apply bg-gray-700 text-white;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-gray-800 shadow p-4 flex justify-center items-center font-medium">
+    <div class="space-x-4">
+      <a href="/" class="nav-button">Home</a>
+      <a href="/resume" class="nav-button active">Resume</a>
+      <a href="/gallery" class=""nav-button">Gallery</a>
+    </div>
+  </nav>
+
+  <!-- Resume Content -->
+  <main class="p-8">
+    <section class="max-w-3xl mx-auto p-6">
+      <h2 class="text-3xl font-semibold mb-2 border-b border-gray-700">HSYLC 2025</h2>
+      <div class="space-y-6">
+        <div>
+          <p class="text-xl font-medium">Shenzhen, China</p>
+          <p class="text-gray-400">August 8th - 18th, 2025</p>
+          <p>I had such a blast teaching my second iteration of the seminar <i>Rational Points on Elliptic Curves</i>!!
+            HSYLC (Harvard Summit for Young Leaders in China) is a week-long program where 
+            bright high school students from China experience a liberal arts education; these students take
+            a variety of seminars taught by Harvard students. The goal of my seminar was to expose students to
+            abstract college-level mathematics through the study of group theory and elliptic curves.
+          </p>
+        </div>
+      </div>
+      <div class="flex md:flex-row flex-col items-center gap-4 mt-4">
+        <img src="/assets/hsylc/hsylc2.JPG" alt="hsylc2" class="h-auto w-auto min-w-0">
+        <img src="/assets/hsylc/hsylc1.JPG" alt="hsylc1" class="h-auto w-auto min-w-0">
+      </div>
+      <div class="space-y-6 mt-4">
+        Here are some of my course notes:
+        <ul class="list-disc list-outside pl-4">
+            <li><a href="/assets/hsylc/HSYLC 2025 Notes Intro.pdf" target="_blank" class="text-blue-400 underline">Introduction</a></li>
+            <li><a href="/assets/hsylc/HSYLC 2025 Notes Group Theory.pdf" target="_blank" class="text-blue-400 underline">Group Theory</a></li>
+            <li><a href="/assets/hsylc/HSYLC 2025 Notes Elliptic Curves.pdf" target="_blank" class="text-blue-400 underline">Elliptic Curves</a></li>
+          </ul>
+      </div>
+      <div class="space-y-6 mt-4">
+        <p>Complex elliptic curves are topologically a torus... what a good excuse to get doughnuts with everyone!</p>
+      </div>
+
+      <div class="flex md:flex-row flex-col items-center gap-2 mt-4">
+        <img src="/assets/hsylc/hsylc3.jpeg" alt="hsylc3" class="h-auto w-auto min-w-0">
+        <img src="/assets/hsylc/hsylc4.jpeg" alt="hsylc4" class="h-auto w-auto min-w-0">
+        <img src="/assets/hsylc/hsylc5.jpeg" alt="hsylc5" class="h-auto w-auto min-w-0">
+      </div>
+    </section>
+  </main>
+</body>
+</html>
